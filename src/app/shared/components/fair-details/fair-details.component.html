@@ -1,0 +1,27 @@
+
+
+<div class="fairsDetails mb-4">
+    <div class="bannerImg mb-4">
+        <img [src]="getSelectedFair.bannerUrl" 
+        [alt]="getSelectedFair.fairName"
+        [title]="getSelectedFair.fairName">
+        <div class="fairContent text-capitalize">
+            <h3 class="m-0"> {{getSelectedFair.fairName}} </h3>
+            <p class="m-0">
+             Event type : {{getSelectedFair.type}}
+            </p>
+            <p class="m-0">
+             StartDate : {{getSelectedFair.startDate | json}}
+            </p>
+         </div>
+    </div>
+    <p
+    *ngIf="getSelectedFair.candidateDescription" 
+    [innerHTML]="getSelectedFair.candidateDescription">
+    </p>
+    <p
+    *ngIf="getSelectedFair.schoolDescription" 
+    [innerHTML]="getSelectedFair.schoolDescription">
+    </p>
+</div>
+

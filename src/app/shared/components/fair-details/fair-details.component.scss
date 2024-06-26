@@ -1,0 +1,69 @@
+
+
+.fairsDetails{
+    padding : 1rem;
+    background-color: #fff;
+    box-shadow: 10px 10px 20px rgba(0,0,0, .5);
+     .bannerImg{
+        height : 300px;
+        width : 100%;
+        position: relative;
+        img{
+            width : 100%;
+            height : 100%;
+            object-fit: cover;
+        }
+        .fairContent{
+            position: absolute;
+            bottom: 10px;
+            left : 20px;
+            z-index: 3;
+            width : 100%;
+            color: #fff;
+        }
+     }
+}
+
+.bannerImg::before{
+    content: '';
+    position: absolute;
+    background-image: linear-gradient(45deg , rgb(17, 14, 14) , transparent);
+    width : 100%;
+    height : 100%;
+    display : block;
+    left : 0;
+    bottom: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// .bannerImg::after{
+//     content: '';
+//     position: absolute;
+//     width : 100%;
+//     display: block;
+//     height: 100%;
+//     left : 0;
+//     top : 0;
+//     background-image: linear-gradient(45deg , rgb(17, 14, 14) , transparent);
+// }
